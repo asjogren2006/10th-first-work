@@ -48,6 +48,7 @@ nav li {
 
 .section2 {
     background-image: url(images/sunrise.webp);
+    background-attachment: fixed;
 }
 
 .section3 {
@@ -82,4 +83,34 @@ nav li {
     padding: 20px 0 20px 0;
     border: 2px solid black;
     font-size: 30px;
+}
+
+.paragraph {
+    font-size: 23px;
+    width: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#p1 {
+    color: rgb(39, 86, 112);
+    background-color: rgba(150, 142, 142, 0.438);
+    border: 2px solid ;
+    position: relative;
+    top: 85px;
+    left: 35%;
+    text-align: center;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+#p2 {
+    color: rgb(193, 201, 201);
+    background-color: rgba(188, 143, 143, 0.452);
+    border: 2px solid white;
+    position: relative;
+    top: 720px;
+    left: 30px;
+    padding: 18px;
+    border-radius: 5px;
+
 }
