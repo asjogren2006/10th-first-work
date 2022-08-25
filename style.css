@@ -57,9 +57,7 @@ nav li {
 
 
 
-.section4 {
-    background-image: url(images/blue.png);
-}
+
 
 .header {
     color: lightblue;
@@ -162,7 +160,86 @@ nav li {
     border-color: transparent;
     color: rgb(8, 134, 153);
     cursor: pointer;
+    
 }
+
+.section4 {
+    background-image: url(images/blue.png);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+   
+}
+
+.part2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.section4 h1 {
+    color: rgb(148, 98, 196);
+    position: relative;
+    top: -150px;
+    justify-content: center;
+    font-size: 60px;
+    
+}
+
+#letter {
+    position: relative;
+    top: -90px;
+    width: 100px;
+    padding: 25px;
+    font-size: 21px;
+    color: teal;
+    border-color: transparent;
+    text-align: center;
+}
+
+#letter:focus {
+    outline: 2px solid green;
+}
+
+#submit {
+    position: relative;
+    top: -50px;
+    border-color: grey;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(148, 98, 196);
+    background-color: rgb(218, 216, 216);
+    border-color: transparent;
+    font-size: 17px;
+}
+
+.grid {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    top: 340px;
+}
+
+
+
+#word {
+    font-size: 50px;
+    position: relative;
+    top: -250px;
+    color: rgb(79, 126, 126);
+}
+
+#hint {
+    position: relative;
+    top: -130px;
+    font-size: 30px;
+}
+
+
 
 
 
