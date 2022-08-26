@@ -27,4 +27,30 @@ function sentence(food, place, thing, person) {
 
 }
 
-console.log(sentence())
+
+
+//second game
+
+var a = [1, 2, 4, 9]
+
+
+var wordArr = [
+    {
+        word: "monitor",
+        hint: "used to display"
+    },
+    {
+        word: "house",
+        hint: "something you live in"
+    },
+    {
+        word: "pets",
+        hint: "something to keep you company"
+    },
+    {
+        word: "candy",
+        hint: "something sweet"
+    }
+]
+
+var rN = Math.floor(Math.Random() * wordArr.length)
