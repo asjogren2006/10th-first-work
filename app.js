@@ -53,4 +53,56 @@ var wordArr = [
     }
 ]
 
-var rN = Math.floor(Math.Random() * wordArr.length)
+var rN = Math.floor(Math.random() * wordArr.length)
+
+var word = wordArr[rN].word;
+var hint = wordArr[rN].hint;
+
+document.getElementById("word").innerHTML = word;
+document.getElementById("hint").innerHTML = hint;
+
+var w = document.getElementById("word");
+
+var splitWord = word.split("");
+
+var emptySplitWord = [];
+
+var correct = []
+
+var counter = word.length + 2   
+
+document.getElementById("Wrong").innerHTML = counter
+
+for (i = 0; i < splitWord.length; i++) {
+    emptySplitWord[i] = "-";
+    document.getElementById("word").innerHTML = emptySplitWord.join(" ")
+}
+
+function enterLetter() {
+    var letter = document.getElementById("letter").value;
+
+    for (x = 0; x < splitWord.length; x++){
+        if (letter == splitWord[x]) {
+            emptySplitWord[x] = letter;
+            w.innerHTML = emptySplitWord.join(" ");
+            correct.push(1);
+        } else {
+            document.getElementById("letter").value = "";
+        }
+    }
+
+    if (correct.length == emptySplitWord.length) {
+        alert("You win!")
+    } else if (counter > 1) {
+        counter -= 1;
+        document.getElementById("Wrong").innerHTML = counter;
+    } else if (counter == 1) {
+        alert("You lost.")
+    }
+
+    
+
+
+
+
+}
